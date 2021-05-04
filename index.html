@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Started Template | HTML, CSS, JS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="wave" id="wave1" style="--i:1;"></div>
+            <div class="wave" id="wave2" style="--i:2;"></div>
+            <div class="wave" id="wave3" style="--i:3;"></div>
+            <div class="wave" id="wave4" style="--i:4;"></div>
+        </section>
+        <div class="sec">
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo hic quia ullam sint facilis? Reprehenderit ab, distinctio eos ducimus veniam, corrupti soluta nulla amet sit, officia molestias dolor blanditiis debitis. Ea eius odio unde dolorem voluptate eligendi architecto maxime numquam, blanditiis libero totam delectus corrupti aliquam obcaecati magni quo atque explicabo officia ipsa consequuntur magnam cupiditate fuga! Fugiat consectetur hic sapiente non autem vero dicta earum fugit atque sequi numquam dolore, quod eum ea nesciunt iste repudiandae rerum optio consequuntur unde quae. Commodi sapiente soluta quibusdam repellat consequuntur eveniet id facilis vero vitae, necessitatibus, debitis error, harum ea quos omnis!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nam quasi maxime totam aut perspiciatis quo eligendi libero, reiciendis reprehenderit quas, vitae, temporibus minus? Quo fugiat a illo ut doloribus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsam velit delectus magni laboriosam natus sint commodi distinctio ut aliquam dolore temporibus dolorem sapiente dolorum? Illum voluptatibus quidem nihil incidunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo hic quia ullam sint facilis? Reprehenderit ab, distinctio eos ducimus veniam, corrupti soluta nulla amet sit, officia molestias dolor blanditiis debitis. Ea eius odio unde dolorem voluptate eligendi architecto maxime numquam, blanditiis libero totam delectus corrupti aliquam obcaecati magni quo atque explicabo officia ipsa consequuntur magnam cupiditate fuga! Fugiat consectetur hic sapiente non autem vero dicta earum fugit atque sequi numquam dolore, quod eum ea nesciunt iste repudiandae rerum optio consequuntur unde quae. Commodi sapiente soluta quibusdam repellat consequuntur eveniet id facilis vero vitae, necessitatibus, debitis error, harum ea quos omnis!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nam quasi maxime totam aut perspiciatis quo eligendi libero, reiciendis reprehenderit quas, vitae, temporibus minus? Quo fugiat a illo ut doloribus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsam velit delectus magni laboriosam natus sint commodi distinctio ut aliquam dolore temporibus dolorem sapiente dolorum? Illum voluptatibus quidem nihil incidunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo hic quia ullam sint facilis? Reprehenderit ab, distinctio eos ducimus veniam, corrupti soluta nulla amet sit, officia molestias dolor blanditiis debitis. Ea eius odio unde dolorem voluptate eligendi architecto maxime numquam, blanditiis libero totam delectus corrupti aliquam obcaecati magni quo atque explicabo officia ipsa consequuntur magnam cupiditate fuga! Fugiat consectetur hic sapiente non autem vero dicta earum fugit atque sequi numquam dolore, quod eum ea nesciunt iste repudiandae rerum optio consequuntur unde quae. Commodi sapiente soluta quibusdam repellat consequuntur eveniet id facilis vero vitae, necessitatibus, debitis error, harum ea quos omnis!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nam quasi maxime totam aut perspiciatis quo eligendi libero, reiciendis reprehenderit quas, vitae, temporibus minus? Quo fugiat a illo ut doloribus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsam velit delectus magni laboriosam natus sint commodi distinctio ut aliquam dolore temporibus dolorem sapiente dolorum? Illum voluptatibus quidem nihil incidunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo hic quia ullam sint facilis? Reprehenderit ab, distinctio eos ducimus veniam, corrupti soluta nulla amet sit, officia molestias dolor blanditiis debitis. Ea eius odio unde dolorem voluptate eligendi architecto maxime numquam, blanditiis libero totam delectus corrupti aliquam obcaecati magni quo atque explicabo officia ipsa consequuntur magnam cupiditate fuga! Fugiat consectetur hic sapiente non autem vero dicta earum fugit atque sequi numquam dolore, quod eum ea nesciunt iste repudiandae rerum optio consequuntur unde quae. Commodi sapiente soluta quibusdam repellat consequuntur eveniet id facilis vero vitae, necessitatibus, debitis error, harum ea quos omnis!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nam quasi maxime totam aut perspiciatis quo eligendi libero, reiciendis reprehenderit quas, vitae, temporibus minus? Quo fugiat a illo ut doloribus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsam velit delectus magni laboriosam natus sint commodi distinctio ut aliquam dolore temporibus dolorem sapiente dolorum? Illum voluptatibus quidem nihil incidunt.
+            </p>
+        </div>
+        <script>
+            let wave1 = document.getElementById('wave1')
+            let wave2 = document.getElementById('wave2')
+            let wave3 = document.getElementById('wave3')
+            let wave4 = document.getElementById('wave4')
+
+            window.addEventListener('scroll', function(){
+                let val =  window.scrollY;
+                console.log(val)
+                wave1.style.backgroundPositionX = 400 + val * 4 + 'px';
+                wave2.style.backgroundPositionX = 300 + val * -4 + 'px';
+                wave3.style.backgroundPositionX = 200 + val * 2 + 'px';
+                wave4.style.backgroundPositionX = 100 + val * -2 + 'px';
+            })
+        </script>
+    </body>
+</html>
